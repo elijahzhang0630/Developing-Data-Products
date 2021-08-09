@@ -1,0 +1,18 @@
+---
+title: "LeafLet"
+author: "Shengbai Zhang"
+date: "8/9/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+August-9-2021
+```{r,echo=FALSE}
+print("I have no ideas where they are")
+library(leaflet)
+df<-data.frame(lat=runif(5,80.88,80.98), lng=runif(5,20.88,20.98))
+df%>%
+  leaflet()%>%
+  addTiles()%>%
+  addMarkers()
+```
