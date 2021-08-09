@@ -1,12 +1,15 @@
 ---
-title: "LeafLet"
+title: "leaflet"
 author: "Shengbai Zhang"
 date: "8/9/2021"
-output:
-  pdf_document: default
-  html_document: default
+output: ioslides_presentation
 ---
-August-9-2021
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## August-9-2021
 ```{r,echo=FALSE}
 print("I have no ideas where they are")
 library(leaflet)
@@ -16,3 +19,5 @@ df%>%
   addTiles()%>%
   addMarkers()
 ```
+
+## Thank you
